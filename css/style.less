@@ -1,0 +1,479 @@
+
+@green: #6CB16E;
+@light-green:#B6D8B7;
+
+/*****************************
+			fonts
+*****************************/
+/*OPEN SANS*/
+@font-face {
+	font-family: OpenSans-Regular;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+/*****************************
+			main
+*****************************/
+a:hover{
+	cursor: pointer;
+}
+a:focus {
+	outline: none; /*отключить внешние границы*/
+	background: transparent; /*отключить background*/
+}
+button{
+	outline: none;
+}
+ul{
+	padding-left: 0;
+	li{
+		list-style-type: none;
+	}
+}
+.container{
+    width:1030px;
+}
+/*****************************
+			header
+*****************************/
+header{
+    .top-information{
+        font-size: 16px;
+        padding: 50px 0 20px;
+        img{
+            width: 30px;
+        }
+        i{
+            font-size: 33px;
+            color:@green;
+        }
+        .block-right{
+            text-align:right;
+            font-size: 18px;
+            float:right;
+            span{
+                position: relative;
+                bottom: 6px;
+                margin-right: 28px;
+                margin-left: 5px;
+
+            }
+        }
+        .block-left{
+            float:left;
+             text-align:left;
+             span{
+                 margin-left:5px;
+             }
+        }
+        .icons-top{
+            float:right;
+            img{
+                width: 25px;
+                margin: 5px 8px;
+            }
+            .fb-icon{
+                height: 22px;
+                width: 15px;
+            }
+            .in-icon{
+                width: 19px;
+            }
+        }
+    }
+
+    nav{
+        margin-top:10px;
+        margin-bottom:0 !important;
+        background-color:@green !important;
+        .navbar-form{
+            width:130%;
+        }
+        ul{
+
+            position: relative;
+            top: 7px;
+            li{
+                a{
+                    font-size: 20px;
+                    color:white !important;
+                    margin: 5px 0;
+                     i{
+                        font-size: 10px !important;
+                        margin-left: 20px !important;
+                        position: relative;
+                        bottom: 3px;
+                    }
+                }
+
+            }
+        }
+        form{
+            .form-group{
+                input{
+                    background-color:@light-green;
+                    color:white;
+                    margin: 12px 0;
+                    border-radius: 12px;
+                    border-top:1px solid white;
+                }
+                button{
+                    background-color:@green;
+                    float:right;
+                }
+                i{
+                    color:white;
+                    font-size: 27px;
+                    margin-left: 5px;
+                    position: relative;
+                    top: 4px;
+                }
+            }
+        }
+    }
+}
+
+/*****************************
+			logo
+*****************************/
+section.logo{
+    .logo-background{
+        background:url(../images/bg_main.jpg) no-repeat center;
+        background-size:cover;
+        height: 570px;
+    }
+    img{
+        width:90%;
+        margin: 133px 0 40px;
+    }
+}
+/*****************************
+			order
+*****************************/
+section.order{
+    margin-bottom:30px;
+    .container-fluid{
+        background-color:@green;
+        padding:15px;
+    }
+    .order-div{
+        color:white;
+        display:table;
+        margin:5px auto;
+        text-align:center;
+        button{
+           margin-top: 12px;
+           border-radius: 16px;
+           background-color:@light-green;
+           color:white;
+           border-top:1px solid white;
+           border-bottom:1px solid white;
+           font-size: 16px;
+           padding: 6px 32px;
+        }
+    }
+}
+
+/*****************************
+	    advantages
+*****************************/
+section.advantages{
+    margin-bottom:30px;
+    font-size: 60px;
+    .col-md-12{
+        text-align:center;
+        h1{
+            margin-bottom: 45px;
+        }
+    }
+    figure{
+        display: table;
+        margin: 0 auto;
+        margin-bottom:30px;
+        img{
+            width: 42%;
+            display: table;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .last-advantages-img{
+               width: 23%;
+                margin-bottom: 25px;
+        }
+        .second-advantages-img{
+                width: 34%;
+            margin-bottom: 21px;
+        }
+        figcaption{
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
+/*****************************
+			adress
+*****************************/
+section.adress{
+    margin-bottom:0px;
+    color:white;
+    .block-left{
+        background-color:@green;
+        padding: 125px 0;
+        text-align: center;
+    }
+    .block-right{
+        border:3px solid @green;
+        padding: 92px 0;
+        text-align: center;
+        input{
+                font-size: 171%;
+                border-radius: 13px;
+                padding: 9px 18px;
+                border: 2px solid green;
+                border-top: 5px solid @green;
+                border-left: 5px solid @green;
+                color:black;
+                width:60%;
+                position: relative;
+                left: 15px;
+        }
+        button{
+            background-color:@green;
+            color:white;
+            font-size: 24px;
+            border-radius: 17px;
+            padding: 3px 43px;
+            margin-top: 22px;
+        }
+        button:hover{
+            color:@light-green;
+        }
+        .search-arrow{
+            background-color:@green;
+                display: inline-block;
+            background-color: #6CB16E;
+            font-size: 15px;
+            padding: 6px 11px;
+            border-radius: 42px;
+            position: relative;
+            right: 43px;
+            top: -3px;
+            cursor:pointer;
+            i{
+                color:white;
+                position: relative;
+                top: 1px;
+            }
+            i:hover{
+                color:@light-green;
+            }
+        }
+    }
+}
+
+/*****************************
+         special-offer
+*****************************/
+section.special-offer{
+    margin-bottom:30px;
+    img{
+        width:100%;
+    }
+    .block-left{
+        border:4px solid @green;
+        text-align: center;
+            color:black;
+            .col-md-12{
+                padding: 27px 20px;
+            }
+            .offer-second-row{
+                border-top:4px solid @green;
+                height: 167px;
+                background:url("../images/car.jpg") no-repeat center;
+                background-size:cover;
+            }
+            .offer-third-row{
+                border:none;
+                border-bottom:4px solid @green;
+                height: 166px;
+                 background:url("../images/1.jpg") no-repeat center;
+                background-size:cover;
+            }
+            .offer-left-block{
+                border-right:4px solid @green;
+            }
+            .offer-right-block{
+                h3{
+                    margin-top: 24px;
+                }
+               
+            }
+    }
+    .block-right{
+         background-color:@green;
+         padding: 137px 0;
+        text-align: center;
+         color:white;
+    }
+}
+
+/*****************************
+         proposals
+*****************************/
+section.proposals{
+    margin-top:80px;
+    margin-bottom:70px;
+    .col-md-4{
+       /*padding: 0 30px;
+       &:first-child{
+        padding: 0 30px 0 0 ;
+       }
+       &:last-child{
+        padding: 0 0 0 30px;
+       }*/
+    }
+    .proposals-div{
+        border:2px solid @green;
+        margin-bottom:30px;
+         .proposals-img-1{
+            height:240px;
+            background:url(../images/close.jpg) no-repeat center;
+            background-size:cover;
+        }
+           .proposals-img-2{
+            height:240px;
+             background:url(../images/bg.jpg) no-repeat center;
+            background-size:cover;
+        }
+             .proposals-img-3{
+            height:240px;
+            background:url(../images/queen.jpg) no-repeat center;
+            background-size:cover;
+        }
+        .proposals-tittle{
+            background-color:@green;
+            margin-bottom: 0;
+            padding: 5px 15px;
+            text-align: center;
+            color:white;
+        }
+    }
+}
+
+/*****************************
+			footer
+*****************************/
+footer{
+    background-color:@green;
+    padding:60px 50px 30px;
+    text-align:center;
+    h4{
+        font-weight:bold;
+        margin-bottom:25px;
+    }
+    ul{
+        text-align: left;
+            display: table;
+        margin: 0 auto;
+        li{
+            list-style-type:disc;
+            margin-bottom:5px;
+            a{
+                color:white;
+                text-decoration:none;
+                font-size:18px;
+            }
+            a:hover{
+                color:@light-green;
+                text-decoration:none;
+            }
+        }
+    }
+}
+
+/*****************************
+			media
+*****************************/
+@media screen and (max-width: 1321px){
+
+}
+@media screen and (max-width: 1200px){
+    .adress{
+        .block-right{
+            input{
+                font-size: 24px;
+            }
+        }
+    }
+      .special-offer{
+      .block-right{
+            padding: 136px 0 !important;
+      }
+  }
+  section.logo img {
+    width: 50%;
+    display: table;
+    margin: 27px auto;
+  }
+      header{
+        nav{
+            ul{
+                li{
+                    a{
+                        i {
+                            display:none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+     header{
+        nav{
+            ul{
+                li{
+                   display: table !important;
+                    margin: 0 auto;
+                  }
+                }
+            }
+        }
+    .navbar-form{
+        width:100% !important;
+        margin:0;
+        .form-group{
+            display: table;
+            margin: 0 auto;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    	header .top-information {
+    text-align: center;
+    .block-right{
+        float:none !important;
+        text-align:center;
+        
+        .icons-top{
+            float:none;
+        }
+    }
+    .block-left{
+        float:none !important; 
+        text-align:center;
+        margin-bottom:25px;
+    }
+    }
+}
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+	
+}
